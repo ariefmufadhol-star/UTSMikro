@@ -5,33 +5,8 @@ import os
 # --- KONFIGURASI HALAMAN ---
 st.set_page_config(page_title="Electronics Web Project - UTS", page_icon="⚡", layout="centered")
 
-# --- STYLE CSS UNTUK TEMA ELEKTRONIKA MODERN (DARK MODE) ---
-st.markdown("""
-    <style>
-    .stApp {
-        background-color: #0b0f19;
-        color: #e2e8f0;
-    }
-    .highlight {
-        color: #00ffcc;
-        font-weight: bold;
-    }
-    .section-title {
-        background-color: #1f2937;
-        color: #00ffcc;
-        padding: 6px 12px;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-        border-left: 4px solid #38bdf8;
-    }
-    .item-title { color: #e2e8f0; font-weight: bold; font-size: 15px; margin-top: 10px; }
-    .item-sub { color: #38bdf8; font-size: 13px; margin-bottom: 10px; }
-    </style>
-""", unsafe_allowed_html=True)
+# --- STYLE CSS AMAN UNTUK PYTHON HALAMAN DEPLOY ---
+st.markdown("<style>.stApp {background-color: #0b0f19; color: #e2e8f0;} .highlight {color: #00ffcc; font-weight: bold;} .section-title {background-color: #1f2937; color: #00ffcc; padding: 6px 12px; border-radius: 5px; font-size: 16px; font-weight: bold; letter-spacing: 1px; margin-top: 20px; margin-bottom: 15px; border-left: 4px solid #38bdf8;} .item-title {color: #e2e8f0; font-weight: bold; font-size: 15px; margin-top: 10px;} .item-sub {color: #38bdf8; font-size: 13px; margin-bottom: 10px;}</style>", unsafe_allowed_html=True)
 
 # --- NAVIGASI NAV/TAB TEMA ELEKTRO ---
 tabs = st.tabs(["⌁ HOME", "⌁ PROFILE"])
